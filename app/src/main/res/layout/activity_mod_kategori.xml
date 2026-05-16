@@ -1,154 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:background="?android:attr/colorBackground">
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
 
-        <!-- Header dengan tombol back -->
-        <LinearLayout
-            android:layout_width="match_parent"
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="Back"
+            android:src="@drawable/panah"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="16dp"
-            android:background="?android:attr/colorBackground"
-            android:elevation="4dp">
-
-            <ImageView
-                android:id="@+id/btnBack"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/panah"
-                android:clickable="true"
-                android:focusable="true"
-                android:contentDescription="Kembali"
-                app:tint="?attr/colorOnSurface"/>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:layout_marginStart="16dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tambah Kategori"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:textColor="?android:attr/textColorPrimary"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Root Of Sales"
-                    android:textSize="12sp"
-                    android:textColor="?android:attr/textColorSecondary"/>
-            </LinearLayout>
-        </LinearLayout>
-
-        <!-- Card Form -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="24dp"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="8dp"
-            app:cardBackgroundColor="?attr/colorSurface">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="24dp">
-
-                <!-- Judul Form -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tambah Kategori"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
-                    android:textColor="?android:attr/textColorPrimary"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="24dp"/>
-
-                <!-- Label Nama Kategori -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Nama Kategori"
-                    android:textSize="14sp"
-                    android:textColor="?android:attr/textColorSecondary"
-                    android:layout_marginBottom="8dp"/>
-
-                <!-- Input Nama Kategori -->
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="24dp"
-                    app:boxBackgroundMode="outline"
-                    app:boxStrokeColor="?attr/colorPrimary"
-                    app:hintEnabled="false">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/etNamaKategori"
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:hint="Masukkan nama kategori"
-                        android:paddingStart="16dp"
-                        android:paddingEnd="16dp"
-                        android:textSize="16sp"
-                        android:inputType="text"
-                        android:textColor="?android:attr/textColorPrimary"/>
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <!-- Label Status Kategori -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Status Kategori"
-                    android:textSize="14sp"
-                    android:textColor="?android:attr/textColorSecondary"
-                    android:layout_marginBottom="8dp"/>
-
-                <!-- Spinner Status -->
-                <Spinner
-                    android:id="@+id/spinnerStatus"
-                    android:layout_width="match_parent"
-                    android:layout_height="56dp"
-                    android:background="@android:drawable/btn_dropdown"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="16dp"
-                    android:spinnerMode="dropdown"
-                    android:layout_marginBottom="32dp"/>
-
-                <!-- Tombol Simpan -->
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnSimpan"
-                    android:layout_width="match_parent"
-                    android:layout_height="56dp"
-                    android:text="Simpan"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="#FFFFFF"
-                    app:backgroundTint="?attr/colorPrimary"
-                    app:cornerRadius="8dp"/>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+            android:layout_marginStart="12dp"
+            android:text="Tambah Kategori"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#2C3E50" />
 
     </LinearLayout>
-</ScrollView>
-    ```
 
-    **File ini harus disimpan di:**
-    ```
-    app/src/main/res/layout/activity_mod_kategori.xml
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Kategori"
+            app:boxStrokeColor="@color/purple_500"
+            app:hintTextColor="@color/purple_500"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNamaKategori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Status Kategori"
+            app:boxStrokeColor="@color/purple_500"
+            app:hintTextColor="@color/purple_500"
+            android:layout_marginBottom="32dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/spinnerJenis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:padding="16dp"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Simpan"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1E88E5"
+            app:cornerRadius="28dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnHapus"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:text="Hapus Kategori"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#E53935"
+            app:cornerRadius="28dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>

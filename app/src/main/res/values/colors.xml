@@ -2,4 +2,27 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <!-- Status Active -->
+    <color name="status_active_bg">#E8F5E9</color>
+    <color name="status_active_text">#2E7D32</color>
+
+    <!-- Status Inactive -->
+    <color name="status_inactive_bg">#FFEBEE</color>
+    <color name="status_inactive_text">#C62828</color>
+
+    <!-- Light mode colors -->
+    <color name="bg_screen">#F8F8F8</color>
+    <color name="bg_card">#FFFFFF</color>
+    <color name="bg_preview">#F0EEF8</color>
+    <color name="text_primary">#1A1A1A</color>
+    <color name="text_secondary">#666666</color>
+    <color name="text_hint">#9E9E9E</color>
+    <color name="icon_color">#3D3D3D</color>
+    <color name="divider">#E0E0E0</color>
 </resources>

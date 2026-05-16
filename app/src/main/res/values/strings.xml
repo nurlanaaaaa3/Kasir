@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Kasir</string>
+
+    <!-- Status Kategori -->
+    <string name="status_aktif">Aktif</string>
+    <string name="status_nonatif">Non Aktif</string>
 </resources>
