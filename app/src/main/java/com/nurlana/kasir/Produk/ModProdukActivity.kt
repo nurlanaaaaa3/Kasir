@@ -41,7 +41,13 @@ class ModProdukActivity : AppCompatActivity() {
     private var fotoTerpilih: String = ""
     private val daftarFoto = listOf(
         "ayamgeprek",
-        "frenchfries"
+        "frenchfries",
+        "esteh",
+        "eskrim",
+        "nasigoreng",
+        "cirengisiayamsuwir",
+        "esjerukperas",
+        "puddingstrawberry"
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
