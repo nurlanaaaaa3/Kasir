@@ -24,7 +24,6 @@ class DataProdukActivity : AppCompatActivity() {
 
     private lateinit var ivKembali: ImageView
     private lateinit var etSearch: EditText
-    private lateinit var ivReload: ImageView
     private lateinit var rvProduk: RecyclerView
     private lateinit var fabTambah: FloatingActionButton
     private lateinit var llFilterKategori: LinearLayout
@@ -58,7 +57,6 @@ class DataProdukActivity : AppCompatActivity() {
     private fun initViews() {
         ivKembali = findViewById(R.id.ivKembali)
         etSearch = findViewById(R.id.etSearch)
-        ivReload = findViewById(R.id.ivReload)
         rvProduk = findViewById(R.id.rvProduk)
         fabTambah = findViewById(R.id.fabTambah)
         llFilterKategori = findViewById(R.id.llFilterKategori)
@@ -79,13 +77,6 @@ class DataProdukActivity : AppCompatActivity() {
 
     private fun setupListeners() {
         ivKembali.setOnClickListener { finish() }
-
-        ivReload.setOnClickListener {
-            etSearch.setText("")
-            filterAktif = "Semua"
-            adapter.updateData(listProdukAll)
-            setupFilterButtons()
-        }
 
         etSearch.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}

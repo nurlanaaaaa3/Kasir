@@ -14,11 +14,12 @@
         android:theme="@style/Theme.Kasir"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Akun.AkunActivity"
+            android:exported="false" />
+        <activity
             android:name=".Produk.DataProdukActivity"
             android:exported="false" />
-
-        <activity android:name=".Produk.ModProdukActivity"/>
-
+        <activity android:name=".Produk.ModProdukActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

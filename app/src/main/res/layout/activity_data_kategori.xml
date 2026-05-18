@@ -33,6 +33,17 @@
                 android:contentDescription="Kembali"
                 app:tint="?attr/colorOnSurface"/>
 
+            <ImageView
+                android:id="@+id/ivSearch"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/cari"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Cari"
+                app:tint="?attr/colorOnSurface"/>
+
             <EditText
                 android:id="@+id/etSearch"
                 android:layout_width="0dp"
@@ -47,23 +58,15 @@
                 android:imeOptions="actionSearch"/>
 
             <ImageView
-                android:id="@+id/ivSearch"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/cari"
-                android:clickable="true"
-                android:focusable="true"
-                android:contentDescription="Cari"
-                app:tint="?attr/colorOnSurface"/>
-
-            <ImageView
                 android:id="@+id/ivReload"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_marginStart="8dp"
+                android:padding="8dp"
                 android:src="@drawable/reload"
                 android:clickable="true"
                 android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Reload"
                 app:tint="?attr/colorOnSurface"/>
         </LinearLayout>

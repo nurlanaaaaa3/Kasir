@@ -74,7 +74,10 @@ class DataKategoriActivity : AppCompatActivity() {
         ivKembali.setOnClickListener { finish() }
 
         ivReload.setOnClickListener {
+            Log.d("TEST", "reload diklik")
             etSearch.setText("")
+            etSearch.clearFocus()
+            listKategori.clear()
             loadData()
         }
 

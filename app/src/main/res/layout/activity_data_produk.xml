@@ -43,7 +43,7 @@
                     android:id="@+id/ivSearch"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:layout_marginStart="12dp"
+                    android:layout_marginStart="30dp"
                     android:src="@drawable/cari"
                     android:contentDescription="Cari"
                     app:tint="#999999"/>
@@ -60,16 +60,6 @@
                     android:inputType="text"
                     android:imeOptions="actionSearch"/>
 
-                <ImageView
-                    android:id="@+id/ivReload"
-                    android:layout_width="28dp"
-                    android:layout_height="28dp"
-                    android:layout_marginStart="8dp"
-                    android:src="@drawable/cari"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:contentDescription="Reload"
-                    app:tint="#999999"/>
             </LinearLayout>
 
             <View
