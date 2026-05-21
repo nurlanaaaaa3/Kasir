@@ -91,7 +91,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Laporan", Toast.LENGTH_SHORT).show()
         }
         menuAkun.setOnClickListener {
-            Toast.makeText(this, "Akun", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, AkunActivity::class.java))
         }
         menuLayanan.setOnClickListener {
             startActivity(Intent(this, DataProdukActivity::class.java))

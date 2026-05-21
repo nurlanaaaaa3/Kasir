@@ -14,7 +14,10 @@
         android:theme="@style/Theme.Kasir"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".Akun.AkunActivity"
+            android:name=".transaksi.TransaksiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AkunActivity"
             android:exported="false" />
         <activity
             android:name=".Produk.DataProdukActivity"
@@ -32,7 +35,7 @@
         <activity
             android:name=".kategori.DataKategoriActivity"
             android:exported="true"
-            android:label="Data Kategori" /> <!-- ModKategoriActivity -->
+            android:label="Data Kategori" />
         <activity
             android:name=".kategori.ModKategoriActivity"
             android:exported="true"
