@@ -13,12 +13,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kasir"
         android:usesCleartextTraffic="true">
-        <activity
-            android:name=".transaksi.TransaksiActivity"
-            android:exported="false" />
+        <activity android:name=".transaksi.TransaksiActivity"
+            android:exported="false"/>
+        <activity android:name=".transaksi.StrukActivity"
+            android:exported="false"/>
         <activity
             android:name=".AkunActivity"
             android:exported="false" />
+        <activity android:name=".pelanggan.DataPelangganActivity"
+            android:exported="false"/>
+        <activity android:name=".pelanggan.ModPelangganActivity"
+            android:exported="false"/>
+        <activity android:name=".laporan.LaporanActivity"
+            android:exported="false"/>
         <activity
             android:name=".Produk.DataProdukActivity"
             android:exported="false" />

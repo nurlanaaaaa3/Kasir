@@ -10,6 +10,9 @@ import androidx.cardview.widget.CardView
 import com.google.firebase.database.FirebaseDatabase
 import com.nurlana.kasir.kategori.DataKategoriActivity
 import com.nurlana.kasir.Produk.DataProdukActivity
+import com.nurlana.kasir.transaksi.TransaksiActivity
+import com.nurlana.kasir.pelanggan.DataPelangganActivity
+import com.nurlana.kasir.laporan.LaporanActivity
 import java.text.NumberFormat
 import java.text.SimpleDateFormat
 import java.util.*
@@ -82,13 +85,13 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupClickListeners() {
         menuTransaksi.setOnClickListener {
-            Toast.makeText(this, "Transaksi", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, TransaksiActivity::class.java))
         }
         menuPelanggan.setOnClickListener {
-            Toast.makeText(this, "Pelanggan", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, DataPelangganActivity::class.java))
         }
         menuLaporan.setOnClickListener {
-            Toast.makeText(this, "Laporan", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, LaporanActivity::class.java))
         }
         menuAkun.setOnClickListener {
             startActivity(Intent(this, AkunActivity::class.java))
