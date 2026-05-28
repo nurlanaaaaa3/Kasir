@@ -3,11 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="50dp"
-    android:paddingBottom="20dp"
-    android:paddingStart="20dp"
-    android:paddingEnd="20dp"
-    android:background="#F5F5F5">
+    android:background="@color/bg_home">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,11 +15,11 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:paddingTop="19dp"
+            android:paddingTop="50dp"
             android:paddingBottom="20dp"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
-            android:background="@android:color/white">
+            android:background="@color/header_bg">
 
             <ImageView
                 android:id="@+id/ivKembali"
@@ -33,7 +29,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:contentDescription="Kembali"
-                app:tint="?attr/colorOnSurface"/>
+                app:tint="@color/header_title_text"/>
 
             <TextView
                 android:id="@+id/tvJudul"
@@ -42,9 +38,9 @@
                 android:layout_weight="1"
                 android:layout_marginStart="12dp"
                 android:text="Tambah Pelanggan"
-                android:textSize="24sp"
+                android:textSize="26sp"
                 android:textStyle="bold"
-                android:textColor="#2C3E50"/>
+                android:textColor="@color/header_title_text"/>
         </LinearLayout>
 
         <androidx.cardview.widget.CardView
@@ -53,7 +49,7 @@
             android:layout_margin="16dp"
             app:cardCornerRadius="16dp"
             app:cardElevation="4dp"
-            app:cardBackgroundColor="#FFFFFF">
+            app:cardBackgroundColor="@color/card_bg">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -67,12 +63,15 @@
                     android:layout_height="wrap_content"
                     android:hint="Nama Pelanggan"
                     android:layout_marginBottom="12dp"
-                    app:boxStrokeColor="@color/purple_500">
+                    app:boxStrokeColor="@color/input_stroke"
+                    app:hintTextColor="@color/input_hint">
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etNama"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="text"/>
+                        android:inputType="text"
+                        android:textColor="@color/text_primary_brown"
+                        android:textColorHint="@color/input_hint"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -81,12 +80,15 @@
                     android:layout_height="wrap_content"
                     android:hint="Nomor HP"
                     android:layout_marginBottom="12dp"
-                    app:boxStrokeColor="@color/purple_500">
+                    app:boxStrokeColor="@color/input_stroke"
+                    app:hintTextColor="@color/input_hint">
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etNomorHP"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="phone"/>
+                        android:inputType="phone"
+                        android:textColor="@color/text_primary_brown"
+                        android:textColorHint="@color/input_hint"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -95,13 +97,16 @@
                     android:layout_height="wrap_content"
                     android:hint="Alamat"
                     android:layout_marginBottom="16dp"
-                    app:boxStrokeColor="@color/purple_500">
+                    app:boxStrokeColor="@color/input_stroke"
+                    app:hintTextColor="@color/input_hint">
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etAlamat"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textMultiLine"
-                        android:minLines="2"/>
+                        android:minLines="2"
+                        android:textColor="@color/text_primary_brown"
+                        android:textColorHint="@color/input_hint"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.button.MaterialButton
@@ -110,9 +115,9 @@
                     android:layout_height="56dp"
                     android:text="Simpan"
                     android:textSize="16sp"
-                    android:textColor="#FFFFFF"
-                    android:backgroundTint="#42A5F5"
-                    app:cornerRadius="18dp"/>
+                    android:textColor="@color/header_title_text"
+                    android:backgroundTint="@color/btn_simpan"
+                    app:cornerRadius="14dp"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnHapus"
@@ -122,9 +127,9 @@
                     android:text="Hapus Pelanggan"
                     android:textSize="16sp"
                     android:textColor="#FFFFFF"
-                    android:backgroundTint="#E53935"
+                    android:backgroundTint="@color/btn_hapus"
                     android:visibility="gone"
-                    app:cornerRadius="18dp"/>
+                    app:cornerRadius="14dp"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>

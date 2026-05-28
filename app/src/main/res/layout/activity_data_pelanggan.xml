@@ -4,15 +4,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5">
+    android:background="@color/bg_home">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="50dp"
-        android:paddingBottom="20dp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -20,11 +16,11 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:paddingTop="19dp"
+            android:paddingTop="50dp"
             android:paddingBottom="20dp"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
-            android:background="@android:color/white">
+            android:background="@color/header_bg">
 
             <ImageView
                 android:id="@+id/ivKembali"
@@ -34,7 +30,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:contentDescription="Kembali"
-                app:tint="?attr/colorOnSurface"/>
+                app:tint="@color/header_title_text"/>
 
             <ImageView
                 android:id="@+id/ivSearch"
@@ -43,7 +39,7 @@
                 android:layout_marginStart="12dp"
                 android:src="@drawable/cari"
                 android:contentDescription="Cari"
-                app:tint="#999999"/>
+                app:tint="@color/header_sub_text"/>
 
             <EditText
                 android:id="@+id/etSearch"
@@ -52,6 +48,8 @@
                 android:layout_weight="1"
                 android:layout_marginStart="8dp"
                 android:hint="Cari Pelanggan"
+                android:textColorHint="@color/header_sub_text"
+                android:textColor="@color/header_title_text"
                 android:textSize="16sp"
                 android:background="@null"
                 android:inputType="text"
@@ -67,7 +65,7 @@
                 android:padding="4dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Reload"
-                app:tint="#999999"/>
+                app:tint="@color/header_sub_text"/>
         </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
@@ -89,6 +87,7 @@
         android:layout_margin="24dp"
         android:src="@drawable/tambah"
         android:contentDescription="Tambah Pelanggan"
-        app:tint="@android:color/black"/>
+        app:backgroundTint="@color/fab_bg"
+        app:tint="@color/header_title_text"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

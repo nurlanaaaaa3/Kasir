@@ -17,12 +17,40 @@
     <color name="status_inactive_text">#C62828</color>
 
     <!-- Light mode colors -->
-    <color name="bg_screen">#F8F8F8</color>
+    <color name="bg_screen">#FDF6F0</color>
     <color name="bg_card">#FFFFFF</color>
-    <color name="bg_preview">#F0EEF8</color>
-    <color name="text_primary">#1A1A1A</color>
-    <color name="text_secondary">#666666</color>
-    <color name="text_hint">#9E9E9E</color>
-    <color name="icon_color">#3D3D3D</color>
-    <color name="divider">#E0E0E0</color>
+    <color name="bg_preview">#F5E6D3</color>
+    <color name="text_primary">#3B2614</color>
+    <color name="text_secondary">#8B5E3C</color>
+    <color name="text_hint">#C8936A</color>
+    <color name="icon_color">#6D3B1F</color>
+    <color name="divider">#E8C9A0</color>
+
+    <!-- Home / Brown Theme -->
+    <color name="bg_home">#FFF8F0</color>
+    <color name="header_bg">#6D3B1F</color>
+    <color name="header_title_text">#FFFFFF</color>
+    <color name="header_sub_text">#FFD9B0</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="text_primary_brown">#6D3B1F</color>
+    <color name="text_secondary_brown">#A0856B</color>
+    <color name="quick_menu_bg">#FFF3E8</color>
+
+    <!-- Tambahan -->
+    <color name="top_bar_bg">#FFF8F0</color>
+    <color name="icon_tint">#6D3B1F</color>
+    <color name="icon_card_bg">#FFF3E8</color>
+    <color name="input_hint">#A0856B</color>
+    <color name="input_stroke">#6D3B1F</color>
+    <color name="btn_simpan">#6D3B1F</color>
+    <color name="btn_hapus">#E53935</color>
+    <color name="fab_bg">#6D3B1F</color>
+
+    <!-- Status badge kategori -->
+    <color name="status_aktif_bg">#E8F5E9</color>
+    <color name="status_aktif_text">#2E7D32</color>
+    <color name="status_aktif_stroke">#A5D6A7</color>
+    <color name="status_nonaktif_bg">#FFEBEE</color>
+    <color name="status_nonaktif_text">#C62828</color>
+    <color name="status_nonaktif_stroke">#EF9A9A</color>
 </resources>

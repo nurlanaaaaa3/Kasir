@@ -7,16 +7,12 @@
     android:layout_marginBottom="8dp"
     app:cardCornerRadius="12dp"
     app:cardElevation="2dp"
-    app:cardBackgroundColor="#FFFFFF">
+    app:cardBackgroundColor="@color/card_bg">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingTop="50dp"
-        android:paddingBottom="20dp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
         android:padding="12dp">
 
         <LinearLayout
@@ -32,7 +28,7 @@
                 android:text="No.001"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                android:textColor="#2C3E50"/>
+                android:textColor="@color/text_primary_brown"/>
 
             <TextView
                 android:id="@+id/tvTotal"
@@ -41,7 +37,7 @@
                 android:text="Rp 0"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                android:textColor="#4CAF50"/>
+                android:textColor="@color/status_aktif_text"/>
         </LinearLayout>
 
         <LinearLayout
@@ -57,7 +53,7 @@
                 android:layout_weight="1"
                 android:text="2026-01-01 00:00"
                 android:textSize="13sp"
-                android:textColor="#7E7D7D"/>
+                android:textColor="@color/text_secondary_brown"/>
 
             <TextView
                 android:id="@+id/tvNamaPelanggan"
@@ -65,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:text="Pelanggan"
                 android:textSize="13sp"
-                android:textColor="#7E7D7D"/>
+                android:textColor="@color/text_secondary_brown"/>
         </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

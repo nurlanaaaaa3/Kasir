@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#F5F5F5">
+    android:background="@color/bg_home">
 
     <!-- HEADER -->
     <LinearLayout
@@ -16,7 +16,7 @@
         android:paddingBottom="20dp"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
-        android:background="@android:color/white">
+        android:background="@color/header_bg">
 
         <ImageView
             android:id="@+id/ivKembali"
@@ -26,7 +26,7 @@
             android:clickable="true"
             android:focusable="true"
             android:contentDescription="Kembali"
-            app:tint="?attr/colorOnSurface"/>
+            app:tint="@color/header_title_text"/>
 
         <TextView
             android:layout_width="0dp"
@@ -34,9 +34,9 @@
             android:layout_weight="1"
             android:layout_marginStart="12dp"
             android:text="Struk Transaksi"
-            android:textSize="24sp"
+            android:textSize="26sp"
             android:textStyle="bold"
-            android:textColor="#2C3E50"/>
+            android:textColor="@color/header_title_text"/>
     </LinearLayout>
 
     <ScrollView
@@ -50,13 +50,12 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- STRUK CARD -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="4dp"
-                app:cardBackgroundColor="#FFFFFF">
+                app:cardBackgroundColor="@color/card_bg">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -68,16 +67,16 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="SNAKORIA"
+                        android:text="CREAMORA"
                         android:textSize="30sp"
                         android:textStyle="bold"
                         android:gravity="center"
-                        android:textColor="#000000"/>
+                        android:textColor="@color/text_primary_brown"/>
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="#E0E0E0"
+                        android:background="@color/divider"
                         android:layout_marginTop="12dp"
                         android:layout_marginBottom="12dp"/>
 
@@ -94,7 +93,7 @@
                             android:layout_weight="1"
                             android:text="2026-01-01"
                             android:textSize="14sp"
-                            android:textColor="#2C3E50"/>
+                            android:textColor="@color/text_primary_brown"/>
 
                         <TextView
                             android:id="@+id/tvNamaPelanggan"
@@ -102,7 +101,7 @@
                             android:layout_height="wrap_content"
                             android:text="Pelanggan"
                             android:textSize="14sp"
-                            android:textColor="#2C3E50"/>
+                            android:textColor="@color/text_primary_brown"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -118,7 +117,7 @@
                             android:layout_weight="1"
                             android:text="00:00:00"
                             android:textSize="14sp"
-                            android:textColor="#2C3E50"/>
+                            android:textColor="@color/text_secondary_brown"/>
                     </LinearLayout>
 
                     <TextView
@@ -127,13 +126,37 @@
                         android:layout_height="wrap_content"
                         android:text="No.0-1"
                         android:textSize="14sp"
-                        android:textColor="#2C3E50"
+                        android:textColor="@color/text_secondary_brown"
                         android:layout_marginTop="4dp"/>
+
+                    <!-- NAMA KASIR -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="4dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Kasir"
+                            android:textSize="14sp"
+                            android:textColor="@color/text_secondary_brown"/>
+
+                        <TextView
+                            android:id="@+id/tvNamaKasir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textSize="14sp"
+                            android:textColor="@color/text_primary_brown"/>
+                    </LinearLayout>
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="#E0E0E0"
+                        android:background="@color/divider"
                         android:layout_marginTop="12dp"
                         android:layout_marginBottom="12dp"/>
 
@@ -147,7 +170,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="#E0E0E0"
+                        android:background="@color/divider"
                         android:layout_marginTop="12dp"
                         android:layout_marginBottom="12dp"/>
 
@@ -163,7 +186,7 @@
                             android:layout_weight="1"
                             android:text="Total"
                             android:textSize="16sp"
-                            android:textColor="#2C3E50"/>
+                            android:textColor="@color/text_primary_brown"/>
 
                         <TextView
                             android:id="@+id/tvTotal"
@@ -172,7 +195,7 @@
                             android:text="Rp 0"
                             android:textSize="16sp"
                             android:textStyle="bold"
-                            android:textColor="#2C3E50"/>
+                            android:textColor="@color/text_primary_brown"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -187,7 +210,7 @@
                             android:layout_weight="1"
                             android:text="Bayar"
                             android:textSize="16sp"
-                            android:textColor="#2C3E50"/>
+                            android:textColor="@color/text_secondary_brown"/>
 
                         <TextView
                             android:id="@+id/tvBayar"
@@ -195,7 +218,7 @@
                             android:layout_height="wrap_content"
                             android:text="Rp 0"
                             android:textSize="16sp"
-                            android:textColor="#2C3E50"/>
+                            android:textColor="@color/text_primary_brown"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -210,7 +233,7 @@
                             android:layout_weight="1"
                             android:text="Kembali"
                             android:textSize="16sp"
-                            android:textColor="#2C3E50"/>
+                            android:textColor="@color/text_secondary_brown"/>
 
                         <TextView
                             android:id="@+id/tvKembali"
@@ -219,13 +242,13 @@
                             android:text="Rp 0"
                             android:textSize="16sp"
                             android:textStyle="bold"
-                            android:textColor="#E53935"/>
+                            android:textColor="@color/btn_hapus"/>
                     </LinearLayout>
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="#E0E0E0"
+                        android:background="@color/divider"
                         android:layout_marginTop="12dp"
                         android:layout_marginBottom="12dp"/>
 
@@ -239,7 +262,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:background="@color/card_bg">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnTransaksiBaru"
@@ -247,9 +271,20 @@
             android:layout_height="56dp"
             android:text="Transaksi Baru"
             android:textSize="16sp"
-            android:textColor="#FFFFFF"
-            android:backgroundTint="#42A5F5"
-            app:cornerRadius="18dp"/>
+            android:textColor="@color/header_title_text"
+            android:backgroundTint="@color/btn_simpan"
+            app:cornerRadius="14dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPrint"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:text="Print Struk"
+            android:textSize="16sp"
+            android:textColor="@color/header_title_text"
+            android:backgroundTint="@color/text_secondary_brown"
+            app:cornerRadius="14dp"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnKeDashboard"
@@ -258,9 +293,11 @@
             android:layout_marginTop="8dp"
             android:text="Kembali ke Dashboard"
             android:textSize="16sp"
-            android:textColor="#2C3E50"
-            android:backgroundTint="#E0E0E0"
-            app:cornerRadius="18dp"/>
+            android:textColor="@color/text_primary_brown"
+            android:backgroundTint="@color/quick_menu_bg"
+            app:strokeColor="@color/divider"
+            app:strokeWidth="1dp"
+            app:cornerRadius="14dp"/>
     </LinearLayout>
 
 </LinearLayout>

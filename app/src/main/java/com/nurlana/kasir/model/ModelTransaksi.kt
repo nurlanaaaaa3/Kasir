@@ -19,6 +19,7 @@ data class ModelTransaksi(
     val tanggal: String? = null,
     val jam: String? = null,
     val namaPelanggan: String? = null,
+    val namaKasir: String? = null,
     val items: List<ItemTransaksi>? = null,
     val total: Long? = null,
     val bayar: Long? = null,

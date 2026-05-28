@@ -4,6 +4,10 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
 
     <application
         android:allowBackup="true"
@@ -13,9 +17,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kasir"
         android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"/>
         <activity android:name=".transaksi.TransaksiActivity"
             android:exported="false"/>
         <activity android:name=".transaksi.StrukActivity"
+            android:exported="false"/>
+        <activity android:name=".pegawai.DataPegawaiActivity"
+            android:exported="false"/>
+        <activity android:name=".pegawai.ModPegawaiActivity"
+            android:exported="false"/>
+        <activity android:name=".cabang.DataCabangActivity"
+            android:exported="false"/>
+        <activity android:name=".cabang.ModCabangActivity"
+            android:exported="false"/>
+        <activity android:name=".printer.PrinterActivity"
             android:exported="false"/>
         <activity
             android:name=".AkunActivity"
@@ -29,23 +55,15 @@
         <activity
             android:name=".Produk.DataProdukActivity"
             android:exported="false" />
-        <activity android:name=".Produk.ModProdukActivity" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".Produk.ModProdukActivity"
+            android:exported="false"/>
         <activity
             android:name=".kategori.DataKategoriActivity"
-            android:exported="true"
+            android:exported="false"
             android:label="Data Kategori" />
         <activity
             android:name=".kategori.ModKategoriActivity"
-            android:exported="true"
+            android:exported="false"
             android:label="Tambah/Edit Kategori" />
     </application>
 

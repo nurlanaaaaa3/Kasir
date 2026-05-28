@@ -1,13 +1,11 @@
 package com.nurlana.kasir.adapter
 
-import android.content.res.ColorStateList
 import android.view.View
 import android.view.ViewGroup
 import android.view.LayoutInflater
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.button.MaterialButton
 import com.nurlana.kasir.R
 import com.nurlana.kasir.model.ModelKategori
 
@@ -36,7 +34,7 @@ class DetailKategoriAdapter(
 
     inner class KategoriViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val tvNamaKategori: TextView = itemView.findViewById(R.id.tvNamaKategori)
-        val btnStatus: MaterialButton = itemView.findViewById(R.id.btnStatus)
+        val tvStatus: TextView = itemView.findViewById(R.id.tvStatus)
 
         fun bind(kategori: ModelKategori) {
             tvNamaKategori.text = kategori.namaKategori
@@ -44,26 +42,20 @@ class DetailKategoriAdapter(
             val status = kategori.statusKategori ?: ""
 
             if (status.equals("Aktif", ignoreCase = true) || status == "1") {
-                btnStatus.text = itemView.context.getString(R.string.status_aktif)
-                btnStatus.backgroundTintList = ColorStateList.valueOf(
-                    ContextCompat.getColor(itemView.context, R.color.status_active_bg)
+                tvStatus.text = itemView.context.getString(R.string.status_aktif)
+                tvStatus.setTextColor(
+                    ContextCompat.getColor(itemView.context, R.color.status_aktif_text)
                 )
-                btnStatus.setTextColor(
-                    ContextCompat.getColor(itemView.context, R.color.status_active_text)
-                )
-                btnStatus.strokeColor = ColorStateList.valueOf(
-                    ContextCompat.getColor(itemView.context, R.color.status_active_text)
+                tvStatus.background = ContextCompat.getDrawable(
+                    itemView.context, R.drawable.bg_status_aktif
                 )
             } else {
-                btnStatus.text = itemView.context.getString(R.string.status_nonatif)
-                btnStatus.backgroundTintList = ColorStateList.valueOf(
-                    ContextCompat.getColor(itemView.context, R.color.status_inactive_bg)
+                tvStatus.text = itemView.context.getString(R.string.status_nonatif)
+                tvStatus.setTextColor(
+                    ContextCompat.getColor(itemView.context, R.color.status_nonaktif_text)
                 )
-                btnStatus.setTextColor(
-                    ContextCompat.getColor(itemView.context, R.color.status_inactive_text)
-                )
-                btnStatus.strokeColor = ColorStateList.valueOf(
-                    ContextCompat.getColor(itemView.context, R.color.status_inactive_text)
+                tvStatus.background = ContextCompat.getDrawable(
+                    itemView.context, R.drawable.bg_status_nonaktif
                 )
             }
 

@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5"
+    android:background="@color/bg_home"
     android:fillViewport="true">
 
     <LinearLayout
@@ -12,14 +12,16 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- HEADER -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:padding="16dp"
-            android:background="@android:color/white">
+            android:paddingTop="50dp"
+            android:paddingBottom="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:background="@color/top_bar_bg">
 
             <ImageView
                 android:id="@+id/ivKembali"
@@ -29,7 +31,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:contentDescription="Kembali"
-                app:tint="?attr/colorOnSurface"/>
+                app:tint="@color/icon_tint"/>
 
             <TextView
                 android:id="@+id/tvJudul"
@@ -40,21 +42,21 @@
                 android:text="Tambah Produk"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="@android:color/black"/>
+                android:textColor="@color/text_primary_brown"/>
         </LinearLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#E0E0E0"/>
+            android:background="@color/divider"/>
 
-        <!-- FORM CARD -->
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
             app:cardCornerRadius="14dp"
             app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/card_bg"
             app:strokeWidth="0dp">
 
             <LinearLayout
@@ -63,14 +65,14 @@
                 android:orientation="vertical"
                 android:padding="16dp">
 
-                <!-- PREVIEW FOTO -->
                 <androidx.cardview.widget.CardView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginBottom="16dp"
                     app:cardCornerRadius="12dp"
-                    app:cardElevation="2dp">
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="@color/icon_card_bg">
 
                     <ImageView
                         android:id="@+id/imgPreview"
@@ -79,72 +81,75 @@
                         android:scaleType="centerCrop"/>
                 </androidx.cardview.widget.CardView>
 
-                <!-- NAMA PRODUK -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Nama Produk"
                     android:textSize="13sp"
-                    android:textColor="#666666"
+                    android:textColor="@color/text_secondary_brown"
                     android:layout_marginBottom="4dp"/>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="12dp"
+                    app:boxStrokeColor="@color/input_stroke"
+                    app:hintTextColor="@color/input_hint"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etNamaProduk"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Masukkan nama produk"
+                        android:textColor="@color/text_primary_brown"
                         android:inputType="text"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <!-- HARGA -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Harga"
                     android:textSize="13sp"
-                    android:textColor="#666666"
+                    android:textColor="@color/text_secondary_brown"
                     android:layout_marginBottom="4dp"/>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="12dp"
+                    app:boxStrokeColor="@color/input_stroke"
+                    app:hintTextColor="@color/input_hint"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etHarga"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Masukkan harga"
+                        android:textColor="@color/text_primary_brown"
                         android:inputType="numberDecimal"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <!-- STOK -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Stok"
                     android:textSize="13sp"
-                    android:textColor="#666666"
+                    android:textColor="@color/text_secondary_brown"
                     android:layout_marginBottom="4dp"/>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="12dp"
+                    app:boxStrokeColor="@color/input_stroke"
+                    app:hintTextColor="@color/input_hint"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etStok"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Masukkan stok"
+                        android:textColor="@color/text_primary_brown"
                         android:inputType="number"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -154,17 +159,16 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="12dp"
                     android:text="Stok Tak Terbatas"
-                    android:textColor="#3D3D3D"
+                    android:textColor="@color/text_primary_brown"
                     android:textSize="14sp"
-                    android:buttonTint="#5C4DB1"/>
+                    android:buttonTint="@color/header_bg"/>
 
-                <!-- KATEGORI -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Kategori"
                     android:textSize="13sp"
-                    android:textColor="#666666"
+                    android:textColor="@color/text_secondary_brown"
                     android:layout_marginBottom="4dp"/>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -172,24 +176,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="12dp"
+                    app:boxStrokeColor="@color/input_stroke"
+                    app:hintTextColor="@color/input_hint"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
-
                     <AutoCompleteTextView
                         android:id="@+id/actvKategori"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Pilih kategori"
+                        android:textColor="@color/text_primary_brown"
                         android:focusable="false"
                         android:inputType="none"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <!-- CABANG -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Cabang"
                     android:textSize="13sp"
-                    android:textColor="#666666"
+                    android:textColor="@color/text_secondary_brown"
                     android:layout_marginBottom="4dp"/>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -197,24 +202,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="12dp"
+                    app:boxStrokeColor="@color/input_stroke"
+                    app:hintTextColor="@color/input_hint"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
-
                     <AutoCompleteTextView
                         android:id="@+id/actvCabang"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Pilih cabang"
+                        android:textColor="@color/text_primary_brown"
                         android:focusable="false"
                         android:inputType="none"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <!-- FOTO -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Foto Produk"
                     android:textSize="13sp"
-                    android:textColor="#666666"
+                    android:textColor="@color/text_secondary_brown"
                     android:layout_marginBottom="4dp"/>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -222,24 +228,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="12dp"
+                    app:boxStrokeColor="@color/input_stroke"
+                    app:hintTextColor="@color/input_hint"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
-
                     <AutoCompleteTextView
                         android:id="@+id/actvFoto"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Pilih foto"
+                        android:textColor="@color/text_primary_brown"
                         android:focusable="false"
                         android:inputType="none"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <!-- STATUS -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Status"
                     android:textSize="13sp"
-                    android:textColor="#666666"
+                    android:textColor="@color/text_secondary_brown"
                     android:layout_marginBottom="4dp"/>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -247,24 +254,39 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
+                    app:boxStrokeColor="@color/input_stroke"
+                    app:hintTextColor="@color/input_hint"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
-
                     <AutoCompleteTextView
                         android:id="@+id/actvStatus"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Pilih status"
+                        android:textColor="@color/text_primary_brown"
                         android:focusable="false"
                         android:inputType="none"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <!-- TOMBOL SIMPAN -->
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnSimpan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Simpan"
                     android:textSize="16sp"
+                    android:textColor="@color/header_title_text"
+                    android:backgroundTint="@color/header_bg"
+                    app:cornerRadius="10dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnHapus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Hapus Produk"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#E53935"
+                    android:visibility="gone"
                     app:cornerRadius="10dp"/>
 
             </LinearLayout>

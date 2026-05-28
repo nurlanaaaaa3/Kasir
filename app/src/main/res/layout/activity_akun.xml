@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_home"
     android:fillViewport="true">
 
     <LinearLayout
@@ -10,45 +11,50 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!-- HEADER SIMPEL (tanpa tulisan Selamat Datang) -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:paddingTop="19dp"
-            android:paddingBottom="20dp"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
-            android:background="@android:color/white">
+            android:paddingTop="50dp"
+            android:paddingBottom="24dp"
+            android:background="@color/header_bg">
 
             <ImageView
                 android:id="@+id/ivKembali"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
                 android:src="@drawable/panah"
                 android:clickable="true"
                 android:focusable="true"
                 android:contentDescription="Kembali"
-                app:tint="?attr/colorOnSurface"/>
+                app:tint="@color/header_title_text"/>
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_marginStart="29dp"
+                android:layout_marginStart="12dp"
                 android:text="Akun"
-                android:textSize="35sp"
+                android:textSize="24sp"
                 android:textStyle="bold"
-                android:textColor="#2C3E50"/>
+                android:textColor="@color/header_title_text"/>
         </LinearLayout>
 
+        <!-- CARD FOTO PROFIL -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="4dp"
-            app:cardBackgroundColor="#FFFFFF">
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/card_bg">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -69,9 +75,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Nur lana"
-                    android:textSize="30sp"
+                    android:textSize="26sp"
                     android:textStyle="bold"
-                    android:textColor="#2C3E50"
+                    android:textColor="@color/text_primary_brown"
                     android:layout_marginTop="12dp"/>
 
                 <TextView
@@ -79,22 +85,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Admin"
-                    android:textSize="20sp"
+                    android:textSize="16sp"
                     android:textStyle="italic"
-                    android:textColor="#7E7D7D"
+                    android:textColor="@color/text_secondary_brown"
                     android:layout_marginTop="4dp"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+        <!-- CARD INFORMASI AKUN -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
             android:layout_marginBottom="16dp"
-            app:cardCornerRadius="16dp"
+            app:cardCornerRadius="20dp"
             app:cardElevation="4dp"
-            app:cardBackgroundColor="#FFFFFF">
+            app:cardBackgroundColor="@color/card_bg">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -105,19 +112,20 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Informasi Akun"
-                    android:textSize="30sp"
+                    android:text="INFORMASI AKUN"
+                    android:textSize="11sp"
                     android:textStyle="bold"
-                    android:textColor="#000000"
+                    android:letterSpacing="0.1"
+                    android:textColor="@color/text_secondary_brown"
                     android:layout_marginBottom="16dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Nama"
-                    android:textSize="20sp"
+                    android:textSize="12sp"
                     android:textStyle="bold"
-                    android:textColor="#000000"/>
+                    android:textColor="@color/text_secondary_brown"/>
 
                 <TextView
                     android:id="@+id/tvNama"
@@ -125,17 +133,22 @@
                     android:layout_height="wrap_content"
                     android:text="Nurlana"
                     android:textSize="16sp"
-                    android:textColor="#000000"
-                    android:textStyle="italic|normal"
+                    android:textColor="@color/text_primary_brown"
+                    android:layout_marginBottom="16dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/quick_menu_bg"
                     android:layout_marginBottom="16dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Email"
+                    android:textSize="12sp"
                     android:textStyle="bold"
-                    android:textSize="20sp"
-                    android:textColor="#000000"/>
+                    android:textColor="@color/text_secondary_brown"/>
 
                 <TextView
                     android:id="@+id/tvEmail"
@@ -143,17 +156,22 @@
                     android:layout_height="wrap_content"
                     android:text="nurlana@email.com"
                     android:textSize="16sp"
-                    android:textColor="#000000"
-                    android:textStyle="italic|normal"
+                    android:textColor="@color/text_primary_brown"
+                    android:layout_marginBottom="16dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/quick_menu_bg"
                     android:layout_marginBottom="16dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Role"
+                    android:textSize="12sp"
                     android:textStyle="bold"
-                    android:textSize="20sp"
-                    android:textColor="#000000"/>
+                    android:textColor="@color/text_secondary_brown"/>
 
                 <TextView
                     android:id="@+id/tvRole"
@@ -161,23 +179,23 @@
                     android:layout_height="wrap_content"
                     android:text="Admin"
                     android:textSize="16sp"
-                    android:textColor="#000000"
-                    android:textStyle="italic|normal"/>
+                    android:textColor="@color/text_primary_brown"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+        <!-- TOMBOL KELUAR -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLogout"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginEnd="12dp"
-            android:layout_marginBottom="14dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="24dp"
             android:text="Keluar"
-            android:textSize="19sp"
-            android:textColor="#000000"
-            android:backgroundTint="#42A5F5"
-            app:cornerRadius="18dp"/>
+            android:textSize="16sp"
+            android:textColor="@color/header_title_text"
+            android:backgroundTint="@color/header_bg"
+            app:cornerRadius="16dp"/>
 
     </LinearLayout>
 </ScrollView>

@@ -1,5 +1,7 @@
 package com.nurlana.kasir
 
+import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
@@ -16,12 +18,16 @@ class AkunActivity : AppCompatActivity() {
     private lateinit var tvEmail: TextView
     private lateinit var tvRole: TextView
     private lateinit var btnLogout: MaterialButton
+    private lateinit var prefs: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_akun)
 
+        prefs = getSharedPreferences("kasir_prefs", MODE_PRIVATE)
+
         initViews()
+        tampilkanData()
         setupListeners()
     }
 
@@ -35,11 +41,26 @@ class AkunActivity : AppCompatActivity() {
         btnLogout = findViewById(R.id.btnLogout)
     }
 
+    private fun tampilkanData() {
+        val nama = prefs.getString("namaUser", "-") ?: "-"
+        val username = prefs.getString("username", "-") ?: "-"
+        val role = prefs.getString("role", "-") ?: "-"
+
+        tvNamaAkun.text = nama
+        tvRoleAkun.text = role
+        tvNama.text = nama
+        tvEmail.text = username
+        tvRole.text = role
+    }
+
     private fun setupListeners() {
         ivKembali.setOnClickListener { finish() }
 
         btnLogout.setOnClickListener {
-            Toast.makeText(this, "Berhasil keluar", Toast.LENGTH_SHORT).show()
+            prefs.edit().clear().apply()
+            val intent = Intent(this, LoginActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+            startActivity(intent)
             finish()
         }
     }

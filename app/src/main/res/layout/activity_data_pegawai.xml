@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="50dp"
+            android:paddingBottom="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:background="@color/top_bar_bg">
+
+            <ImageView
+                android:id="@+id/ivKembali"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/panah"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Kembali"
+                app:tint="@color/icon_tint"/>
+
+            <ImageView
+                android:id="@+id/ivSearch"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/cari"
+                android:contentDescription="Cari"
+                app:tint="@color/icon_tint"/>
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:hint="Cari Pegawai"
+                android:textColorHint="@color/input_hint"
+                android:textColor="@color/text_primary_brown"
+                android:textSize="16sp"
+                android:background="@null"
+                android:inputType="text"
+                android:imeOptions="actionSearch"/>
+
+            <ImageView
+                android:id="@+id/ivReload"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/reload"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="4dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Reload"
+                app:tint="@color/icon_tint"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPegawai"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="8dp"
+            android:paddingBottom="80dp"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabTambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="24dp"
+        android:src="@drawable/tambah"
+        android:contentDescription="Tambah Pegawai"
+        app:backgroundTint="@color/header_bg"
+        app:tint="@color/header_title_text"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

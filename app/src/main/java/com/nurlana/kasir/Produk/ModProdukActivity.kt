@@ -1,6 +1,7 @@
 package com.nurlana.kasir.Produk
 
 import android.os.Bundle
+import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.button.MaterialButton
@@ -26,6 +27,7 @@ class ModProdukActivity : AppCompatActivity() {
     private lateinit var actvCabang: AutoCompleteTextView
     private lateinit var actvStatus: AutoCompleteTextView
     private lateinit var btnSimpan: MaterialButton
+    private lateinit var btnHapus: MaterialButton
 
     private val kategoriRef by lazy { FirebaseDatabase.getInstance().getReference("kategori") }
     private val cabangRef by lazy { FirebaseDatabase.getInstance().getReference("cabang") }
@@ -39,15 +41,23 @@ class ModProdukActivity : AppCompatActivity() {
     private var idKategoriDipilih: String? = null
     private var idCabangDipilih: String? = null
     private var fotoTerpilih: String = ""
+
     private val daftarFoto = listOf(
-        "ayamgeprek",
-        "frenchfries",
-        "esteh",
-        "eskrim",
-        "nasigoreng",
-        "cirengisiayamsuwir",
-        "esjerukperas",
-        "puddingstrawberry"
+        "icecreamvanilla",
+        "icecreamtaro",
+        "icecreamstrawberry",
+        "icecreammatcha",
+        "icecreamchocolate",
+        "gelatoyogurtberry",
+        "gelatopistachio",
+        "gelatomangosorbet",
+        "gelatohazelnut",
+        "gelatodarkchocolate",
+        "waffleicecream",
+        "toasticecream",
+        "pancakeicecream",
+        "curros",
+        "browniessundae"
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -64,7 +74,13 @@ class ModProdukActivity : AppCompatActivity() {
         loadCabang()
 
         tvJudul.text = if (mode == "edit") "Edit Produk" else "Tambah Produk"
-        if (mode == "edit") isiDataEdit()
+
+        if (mode == "edit") {
+            isiDataEdit()
+            btnHapus.visibility = View.VISIBLE
+        } else {
+            btnHapus.visibility = View.GONE
+        }
 
         setupListeners()
     }
@@ -82,6 +98,7 @@ class ModProdukActivity : AppCompatActivity() {
         actvCabang = findViewById(R.id.actvCabang)
         actvStatus = findViewById(R.id.actvStatus)
         btnSimpan = findViewById(R.id.btnSimpan)
+        btnHapus = findViewById(R.id.btnHapus)
     }
 
     private fun setupListeners() {
@@ -93,6 +110,19 @@ class ModProdukActivity : AppCompatActivity() {
         }
 
         btnSimpan.setOnClickListener { simpanProduk() }
+
+        btnHapus.setOnClickListener {
+            produkEdit?.idProduk?.let { id ->
+                produkRef.child(id).removeValue()
+                    .addOnSuccessListener {
+                        Toast.makeText(this, "Produk berhasil dihapus", Toast.LENGTH_SHORT).show()
+                        finish()
+                    }
+                    .addOnFailureListener {
+                        Toast.makeText(this, "Gagal menghapus", Toast.LENGTH_SHORT).show()
+                    }
+            }
+        }
     }
 
     private fun setupDropdownFoto() {

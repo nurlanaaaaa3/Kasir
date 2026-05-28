@@ -1,12 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Status Active -->
+    <color name="status_active_bg">#1B5E20</color>
+    <color name="status_active_text">#A5D6A7</color>
+
+    <!-- Status Inactive -->
+    <color name="status_inactive_bg">#B71C1C</color>
+    <color name="status_inactive_text">#EF9A9A</color>
+
     <!-- Dark mode colors -->
-    <color name="bg_screen">#121212</color>
-    <color name="bg_card">#1E1E1E</color>
-    <color name="bg_preview">#2A2640</color>
-    <color name="text_primary">#F5F5F5</color>
-    <color name="text_secondary">#AAAAAA</color>
-    <color name="text_hint">#666666</color>
-    <color name="icon_color">#E0E0E0</color>
-    <color name="divider">#333333</color>
+    <color name="bg_screen">#1A1210</color>
+    <color name="bg_card">#2C2220</color>
+    <color name="bg_preview">#3E2723</color>
+    <color name="text_primary">#EFEBE9</color>
+    <color name="text_secondary">#BCAAA4</color>
+    <color name="text_hint">#8D6E63</color>
+    <color name="icon_color">#D7CCC8</color>
+    <color name="divider">#4E342E</color>
+
+    <!-- Home / Brown Theme -->
+    <color name="bg_home">#1A1210</color>
+    <color name="header_bg">#2C1A14</color>
+    <color name="header_title_text">#EFEBE9</color>
+    <color name="header_sub_text">#A1887F</color>
+    <color name="card_bg">#2C2220</color>
+    <color name="text_primary_brown">#EFEBE9</color>
+    <color name="text_secondary_brown">#BCAAA4</color>
+    <color name="quick_menu_bg">#3E2723</color>
+
+    <!-- Tambahan -->
+    <color name="top_bar_bg">#2C2220</color>
+    <color name="icon_tint">#EFEBE9</color>
+    <color name="icon_card_bg">#3E2723</color>
+    <color name="input_hint">#BCAAA4</color>
+    <color name="input_stroke">#A1887F</color>
+    <color name="btn_simpan">#A1887F</color>
+    <color name="btn_hapus">#B71C1C</color>
+    <color name="fab_bg">#4E342E</color>
+
+    <!-- Status badge kategori -->
+    <color name="status_aktif_bg">#1B5E20</color>
+    <color name="status_aktif_text">#A5D6A7</color>
+    <color name="status_aktif_stroke">#2E7D32</color>
+    <color name="status_nonaktif_bg">#B71C1C</color>
+    <color name="status_nonaktif_text">#EF9A9A</color>
+    <color name="status_nonaktif_stroke">#C62828</color>
 </resources>

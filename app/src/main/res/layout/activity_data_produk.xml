@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5"
+    android:background="@color/bg_home"
     tools:context=".Produk.DataProdukActivity">
 
     <ScrollView
@@ -27,7 +27,7 @@
                 android:paddingBottom="20dp"
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
-                android:background="@android:color/white">
+                android:background="@color/top_bar_bg">
 
                 <ImageView
                     android:id="@+id/ivKembali"
@@ -37,7 +37,7 @@
                     android:clickable="true"
                     android:focusable="true"
                     android:contentDescription="Kembali"
-                    app:tint="?attr/colorOnSurface"/>
+                    app:tint="@color/icon_tint"/>
 
                 <ImageView
                     android:id="@+id/ivSearch"
@@ -46,7 +46,7 @@
                     android:layout_marginStart="30dp"
                     android:src="@drawable/cari"
                     android:contentDescription="Cari"
-                    app:tint="#999999"/>
+                    app:tint="@color/icon_tint"/>
 
                 <EditText
                     android:id="@+id/etSearch"
@@ -55,6 +55,8 @@
                     android:layout_weight="1"
                     android:layout_marginStart="8dp"
                     android:hint="Pencarian Produk"
+                    android:textColorHint="@color/input_hint"
+                    android:textColor="@color/text_primary_brown"
                     android:textSize="16sp"
                     android:background="@null"
                     android:inputType="text"
@@ -65,13 +67,13 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#E0E0E0"/>
+                android:background="@color/divider"/>
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scrollbars="none"
-                android:background="@android:color/white"
+                android:background="@color/top_bar_bg"
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"
                 android:paddingTop="10dp"
@@ -88,7 +90,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#E0E0E0"/>
+                android:background="@color/divider"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvProduk"
@@ -113,6 +115,7 @@
         android:layout_margin="24dp"
         android:src="@drawable/tambah"
         android:contentDescription="Tambah Produk"
-        app:tint="@android:color/black"/>
+        app:backgroundTint="@color/header_bg"
+        app:tint="@color/header_title_text"/>
 
 </FrameLayout>

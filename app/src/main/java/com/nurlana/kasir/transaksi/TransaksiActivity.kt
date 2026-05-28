@@ -1,5 +1,6 @@
 package com.nurlana.kasir.transaksi
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -10,14 +11,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.database.*
+import com.nurlana.kasir.R
 import com.nurlana.kasir.adapter.ItemTransaksiAdapter
 import com.nurlana.kasir.model.ItemTransaksi
 import com.nurlana.kasir.model.ModelProduk
 import com.nurlana.kasir.model.ModelTransaksi
-import android.content.Intent
-import com.nurlana.kasir.transaksi.StrukActivity
 import java.text.NumberFormat
-import com.nurlana.kasir.R
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -168,6 +167,9 @@ class TransaksiActivity : AppCompatActivity() {
             return
         }
 
+        val prefs = getSharedPreferences("kasir_prefs", MODE_PRIVATE)
+        val namaKasir = prefs.getString("namaUser", "-") ?: "-"
+
         val id = transaksiRef.push().key ?: return
         val now = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date())
         val jam = SimpleDateFormat("HH:mm:ss", Locale.getDefault()).format(Date())
@@ -179,6 +181,7 @@ class TransaksiActivity : AppCompatActivity() {
             tanggal = now,
             jam = jam,
             namaPelanggan = etNamaPelanggan.text.toString().trim(),
+            namaKasir = namaKasir,
             items = listItem,
             total = total,
             bayar = bayar,

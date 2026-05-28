@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cvCARD_KATEGORI"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -10,20 +9,21 @@
     android:clickable="true"
     android:focusable="true"
     android:foreground="?attr/selectableItemBackground"
-    app:cardCornerRadius="8dp"
+    app:cardCornerRadius="12dp"
     app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/card_bg"
     app:strokeWidth="0dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp">
+        android:padding="14dp">
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/iconCard"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            app:cardBackgroundColor="?attr/colorTertiaryContainer"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            app:cardBackgroundColor="@color/icon_card_bg"
             app:cardCornerRadius="12dp"
             app:cardElevation="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -32,44 +32,45 @@
 
             <ImageView
                 android:id="@+id/ivIconKategori"
-                android:layout_width="28dp"
-                android:layout_height="28dp"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
                 android:layout_gravity="center"
                 android:src="@drawable/item_kategori"
-                android:contentDescription="Kategori Icon"/>
+                android:contentDescription="Kategori Icon"
+                app:tint="@color/text_secondary_brown"/>
         </com.google.android.material.card.MaterialCardView>
 
         <TextView
             android:id="@+id/tvNamaKategori"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Kategori"
-            android:textSize="20sp"
+            android:text="Nama Kategori"
+            android:textSize="16sp"
             android:textStyle="bold"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
+            android:textColor="@color/text_primary_brown"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="10dp"
             app:layout_constraintStart_toEndOf="@id/iconCard"
-            app:layout_constraintEnd_toStartOf="@id/btnStatus"
+            app:layout_constraintEnd_toStartOf="@id/tvStatus"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnStatus"
+        <TextView
+            android:id="@+id/tvStatus"
             android:layout_width="wrap_content"
-            android:layout_height="36dp"
+            android:layout_height="wrap_content"
             android:text="Aktif"
             android:textSize="12sp"
-            android:textColor="#000000"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            app:cornerRadius="18dp"
-            app:strokeColor="#000000"
-            app:strokeWidth="1dp"
-            app:backgroundTint="#F5F5F5"
+            android:textStyle="bold"
+            android:textColor="@color/status_aktif_text"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/bg_status_aktif"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            style="@style/Widget.Material3.Button.OutlinedButton"/>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>

@@ -11,7 +11,8 @@ import java.text.NumberFormat
 import java.util.Locale
 
 class LaporanAdapter(
-    private val list: MutableList<ModelTransaksi>
+    private val list: MutableList<ModelTransaksi>,
+    private val onItemClick: (ModelTransaksi) -> Unit
 ) : RecyclerView.Adapter<LaporanAdapter.ViewHolder>() {
 
     fun updateData(newList: MutableList<ModelTransaksi>) {
@@ -44,6 +45,7 @@ class LaporanAdapter(
             tvTotal.text = format.format(transaksi.total ?: 0)
             tvTanggal.text = "${transaksi.tanggal} ${transaksi.jam}"
             tvPelanggan.text = transaksi.namaPelanggan ?: "-"
+            itemView.setOnClickListener { onItemClick(transaksi) }
         }
     }
 }
