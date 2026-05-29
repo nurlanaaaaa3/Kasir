@@ -3,7 +3,7 @@ CREAMORA adalah aplikasi kasir berbasis Android yang digunakan untuk membantu
 proses transaksi penjualan pada cafe ice cream dan dessert dengan 
 tampilan modern, simple, dan mudah digunakan.
 
-## Deskripsi Aplikasi
+## Deskripsi Aplikas
 Kasir App adalah aplikasi kasir berbasis Android yang dibuat untuk mempermudah 
 proses transaksi penjualan. Aplikasi ini memiliki fitur seperti menambahkan barang, 
 menghitung total pembayaran secara otomatis, dan menyimpan data transaksi. 
