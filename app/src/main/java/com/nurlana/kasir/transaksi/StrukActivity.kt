@@ -156,7 +156,7 @@ class StrukActivity : AppCompatActivity() {
                 )
 
                 val sb = StringBuilder()
-                sb.append("[C]<u><font size='big'>SNAKORIA</font></u>\n")
+                sb.append("[C]<u><font size='big'>CREAMORA</font></u>\n")
                 sb.append("[C]================================\n")
                 sb.append("[L]Tanggal  : ${t.tanggal}\n")
                 sb.append("[L]Jam      : ${t.jam}\n")
