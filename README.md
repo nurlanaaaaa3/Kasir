@@ -1,16 +1,14 @@
 # CREAMORA - Ice Cream & Dessert Cafe
-
-CREAMORA adalah aplikasi kasir berbasis Android yang digunakan untuk membantu
-proses transaksi penjualan pada cafe ice cream dan dessert dengan
+CREAMORA adalah aplikasi kasir berbasis Android yang digunakan untuk membantu 
+proses transaksi penjualan pada cafe ice cream dan dessert dengan 
 tampilan modern, simple, dan mudah digunakan.
 
 ## Deskripsi Aplikasi
-Kasir App adalah aplikasi kasir berbasis Android yang dibuat untuk mempermudah
-proses transaksi penjualan. Aplikasi ini memiliki fitur seperti menambahkan barang,
-menghitung total pembayaran secara otomatis, dan menyimpan data transaksi.
-Dengan tampilan yang sederhana dan mudah digunakan, aplikasi ini cocok digunakan sebagai
+Kasir App adalah aplikasi kasir berbasis Android yang dibuat untuk mempermudah 
+proses transaksi penjualan. Aplikasi ini memiliki fitur seperti menambahkan barang, 
+menghitung total pembayaran secara otomatis, dan menyimpan data transaksi. 
+Dengan tampilan yang sederhana dan mudah digunakan, aplikasi ini cocok digunakan sebagai 
 media pembelajaran maupun sistem kasir sederhana untuk usaha kecil.
-
 
 ## Fitur Utama
 - Dashboard Kasir
@@ -33,8 +31,9 @@ media pembelajaran maupun sistem kasir sederhana untuk usaha kecil.
 
 ## Teknologi Yang Digunakan
 - Android Studio
-- Java
+- Kotlin
 - XML Layout
+- Firebase Realtime Database
 
 ## Tampilan Aplikasi
 
@@ -90,25 +89,19 @@ media pembelajaran maupun sistem kasir sederhana untuk usaha kecil.
 - Printer
 
 ## Cara Menjalankan Project
-
 1. Clone repository
 ```bash
-git clone https://github.com/username/creamora.git
+git clone https://github.com/nurlanaaaaa3/Kasir.git
 ```
-
 2. Buka project menggunakan Android Studio
-
 3. Tunggu proses Gradle selesai
-
 4. Jalankan aplikasi menggunakan Emulator atau HP Android
 
 ## Kelebihan Aplikasi
-Kelebihan dari Kasir App adalah tampilannya yang sederhana dan mudah digunakan
-sehingga pengguna dapat melakukan transaksi dengan lebih cepat dan praktis.
-Aplikasi ini mampu menghitung total pembayaran secara otomatis, sehingga dapat mengurangi
-kesalahan perhitungan manual. Selain itu, data transaksi dapat disimpan dengan rapi sehingga
-memudahkan admin dalam melihat kembali riwayat penjualan. Aplikasi ini juga ringan
-dijalankan di perangkat Android dan dapat dikembangkan lagi dengan fitur
+Kelebihan dari Kasir App adalah tampilannya yang sederhana dan mudah digunakan 
+sehingga pengguna dapat melakukan transaksi dengan lebih cepat dan praktis. 
+Aplikasi ini mampu menghitung total pembayaran secara otomatis, sehingga dapat mengurangi 
+kesalahan perhitungan manual. Selain itu, data transaksi dapat disimpan dengan rapi sehingga 
+memudahkan admin dalam melihat kembali riwayat penjualan. Aplikasi ini juga ringan 
+dijalankan di perangkat Android dan dapat dikembangkan lagi dengan fitur 
 tambahan sesuai kebutuhan pengguna.
-
-
