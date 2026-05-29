@@ -1,5 +1,4 @@
 # CREAMORA - Ice Cream & Dessert Cafe
-
 CREAMORA adalah aplikasi kasir berbasis Android yang digunakan untuk membantu 
 proses transaksi penjualan pada cafe ice cream dan dessert dengan 
 tampilan modern, simple, dan mudah digunakan.
@@ -10,7 +9,6 @@ proses transaksi penjualan. Aplikasi ini memiliki fitur seperti menambahkan bara
 menghitung total pembayaran secara otomatis, dan menyimpan data transaksi. 
 Dengan tampilan yang sederhana dan mudah digunakan, aplikasi ini cocok digunakan sebagai 
 media pembelajaran maupun sistem kasir sederhana untuk usaha kecil.
-
 
 ## Fitur Utama
 - Dashboard Kasir
@@ -33,49 +31,50 @@ media pembelajaran maupun sistem kasir sederhana untuk usaha kecil.
 
 ## Teknologi Yang Digunakan
 - Android Studio
-- Java
+- Kotlin
 - XML Layout
+- Firebase Realtime Database
 
 ## Tampilan Aplikasi
 
 ### Login
-![Login](screenshot/login.jpeg)
+![Login](app/screenshot/login.jpeg)
 
 ### Dashboard
-![Dashboard](screenshot/dashboard.jpeg)
+![Dashboard](app/screenshot/dashboard.jpeg)
 
 ### Activity Transaksi
-![Transaksi](screenshot/transaksibaru.jpeg)
-![Transaksi](screenshot/struktransaksi.jpeg)
+![Transaksi](app/screenshot/transaksibaru.jpeg)
+![Transaksi](app/screenshot/struktransaksi.jpeg)
 
 ### Activity Pelanggan
-![Pelanggan](screenshot/pelanggan.jpeg)
-![Pelanggan](screenshot/tambahpelanggan.jpeg)
+![Pelanggan](app/screenshot/pelanggan.jpeg)
+![Pelanggan](app/screenshot/tambahpelanggan.jpeg)
 
 ### Activity Laporan
-![Laporan](screenshot/laporan.jpeg)
+![Laporan](app/screenshot/laporan.jpeg)
 
 ### Activity Akun
-![Akun](screenshot/akun.jpeg)
+![Akun](app/screenshot/akun.jpeg)
 
 ### Activity Produk
-![Produk](screenshot/produk.jpeg)
-![Produk](screenshot/tambahproduk.jpeg)
+![Produk](app/screenshot/produk.jpeg)
+![Produk](app/screenshot/tambahproduk.jpeg)
 
 ### Activity Kategori
-![Kategori](screenshot/kategori.jpeg)
-![Kategori](screenshot/tambahkategori.jpeg)
+![Kategori](app/screenshot/kategori.jpeg)
+![Kategori](app/screenshot/tambahkategori.jpeg)
 
 ### Activity Pegawai
-![Pegawai](screenshot/pegawai.jpeg)
-![Pegawai](screenshot/tambahpegawai.jpeg)
+![Pegawai](app/screenshot/pegawai.jpeg)
+![Pegawai](app/screenshot/tambahpegawai.jpeg)
 
 ### Activity Cabang
-![Cabang](screenshot/cabang.jpeg)
-![Cabang](screenshot/tambahcabang.jpeg)
+![Cabang](app/screenshot/cabang.jpeg)
+![Cabang](app/screenshot/tambahcabang.jpeg)
 
 ### Printer
-![Printer](screenshot/printer.jpeg)
+![Printer](app/screenshot/printer.jpeg)
 
 ## Struktur Menu
 - Dashboard
@@ -90,16 +89,12 @@ media pembelajaran maupun sistem kasir sederhana untuk usaha kecil.
 - Printer
 
 ## Cara Menjalankan Project
-
 1. Clone repository
 ```bash
-git clone https://github.com/username/creamora.git
+git clone https://github.com/nurlanaaaaa3/Kasir.git
 ```
-
 2. Buka project menggunakan Android Studio
-
 3. Tunggu proses Gradle selesai
-
 4. Jalankan aplikasi menggunakan Emulator atau HP Android
 
 ## Kelebihan Aplikasi
