@@ -38,43 +38,43 @@ media pembelajaran maupun sistem kasir sederhana untuk usaha kecil.
 ## Tampilan Aplikasi
 
 ### Login
-![Login](app/screenshot/login.jpeg)
+<img src="app/screenshot/login.jpeg" width="300">
 
 ### Dashboard
-![Dashboard](app/screenshot/dashboard.jpeg)
+<img src="app/screenshot/dashboard.jpeg" width="300">
 
 ### Activity Transaksi
-![Transaksi](app/screenshot/transaksibaru.jpeg)
-![Transaksi](app/screenshot/struktransaksi.jpeg)
+<img src="app/screenshot/transaksibaru.jpeg" width="300">
+<img src="app/screenshot/struktransaksi.jpeg" width="300">
 
 ### Activity Pelanggan
-![Pelanggan](app/screenshot/pelanggan.jpeg)
-![Pelanggan](app/screenshot/tambahpelanggan.jpeg)
+<img src="app/screenshot/pelanggan.jpeg" width="300">
+<img src="app/screenshot/tambahpelanggan.jpeg" width="300">
 
 ### Activity Laporan
-![Laporan](app/screenshot/laporan.jpeg)
+<img src="app/screenshot/laporan.jpeg" width="300">
 
 ### Activity Akun
-![Akun](app/screenshot/akun.jpeg)
+<img src="app/screenshot/akun.jpeg" width="300">
 
 ### Activity Produk
-![Produk](app/screenshot/produk.jpeg)
-![Produk](app/screenshot/tambahproduk.jpeg)
+<img src="app/screenshot/produk.jpeg" width="300">
+<img src="app/screenshot/tambahproduk.jpeg" width="300">
 
 ### Activity Kategori
-![Kategori](app/screenshot/kategori.jpeg)
-![Kategori](app/screenshot/tambahkategori.jpeg)
+<img src="app/screenshot/kategori.jpeg" width="300">
+<img src="app/screenshot/tambahkategori.jpeg" width="300">
 
 ### Activity Pegawai
-![Pegawai](app/screenshot/pegawai.jpeg)
-![Pegawai](app/screenshot/tambahpegawai.jpeg)
+<img src="app/screenshot/pegawai.jpeg" width="300">
+<img src="app/screenshot/tambahpegawai.jpeg" width="300">
 
 ### Activity Cabang
-![Cabang](app/screenshot/cabang.jpeg)
-![Cabang](app/screenshot/tambahcabang.jpeg)
+<img src="app/screenshot/cabang.jpeg" width="300">
+<img src="app/screenshot/tambahcabang.jpeg" width="300">
 
 ### Printer
-![Printer](app/screenshot/printer.jpeg)
+<img src="app/screenshot/printer.jpeg" width="300">
 
 ## Struktur Menu
 - Dashboard
