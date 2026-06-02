@@ -99,7 +99,7 @@ git clone https://github.com/nurlanaaaaa3/Kasir.git
 
 ## Kelebihan Aplikasi
 Kelebihan dari Kasir App adalah tampilannya yang sederhana dan mudah digunakan 
-sehingga pengguna dapat melakukan transaksi dengan lebih cepat dan praktis. 
+sehingga pengguna dapat melakukan transaksi dengan lebih cepat dan lebih praktis. 
 Aplikasi ini mampu menghitung total pembayaran secara otomatis, sehingga dapat mengurangi 
 kesalahan perhitungan manual. Selain itu, data transaksi dapat disimpan dengan rapi sehingga 
 memudahkan admin dalam melihat kembali riwayat penjualan. Aplikasi ini juga ringan 
