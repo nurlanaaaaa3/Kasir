@@ -44,8 +44,7 @@ media pembelajaran maupun sistem kasir sederhana untuk usaha kecil.
 <img src="app/screenshot/dashboard.jpeg" width="300">
 
 ### Activity Transaksi
-<img src="app/screenshot/transaksibaru.jpeg" width="300">
-<img src="app/screenshot/struktransaksi.jpeg" width="300">
+<img src="app/screenshot/transaksibaru.jpeg" width="300"> <img src="app/screenshot/struktransaksi.jpeg" width="300">
 
 ### Activity Pelanggan
 <img src="app/screenshot/pelanggan.jpeg" width="300">
