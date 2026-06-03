@@ -17,6 +17,7 @@ import com.nurlana.kasir.R
 import com.nurlana.kasir.model.ModelTransaksi
 import com.dantsu.escposprinter.EscPosPrinter
 import com.dantsu.escposprinter.connection.bluetooth.BluetoothPrintersConnections
+import com.nurlana.kasir.MainActivity
 import java.text.NumberFormat
 import java.util.Locale
 
@@ -124,12 +125,20 @@ class StrukActivity : AppCompatActivity() {
 
     private fun setupListeners() {
         ivKembali.setOnClickListener { finish() }
+
         btnTransaksiBaru.setOnClickListener {
             val intent = Intent(this, TransaksiActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
             startActivity(intent)
             finish()
         }
+
+        btnKeDashboard.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+            startActivity(intent)
+        }
+
         btnPrint.setOnClickListener { printStruk() }
     }
 
