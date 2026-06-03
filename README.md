@@ -71,6 +71,7 @@ media pembelajaran maupun sistem kasir sederhana untuk usaha kecil.
 <img src="app/screenshot/printer.jpeg" width="300">
 
 ## Struktur Menu
+- Login
 - Dashboard
 - Transaksi
 - Pelanggan
