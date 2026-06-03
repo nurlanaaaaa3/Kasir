@@ -12,7 +12,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import com.google.android.material.button.MaterialButton
-import com.nurlana.kasir.MainActivity
+import com.nurlana.kasir.transaksi.TransaksiActivity
 import com.nurlana.kasir.R
 import com.nurlana.kasir.model.ModelTransaksi
 import com.dantsu.escposprinter.EscPosPrinter
@@ -124,11 +124,11 @@ class StrukActivity : AppCompatActivity() {
 
     private fun setupListeners() {
         ivKembali.setOnClickListener { finish() }
-        btnTransaksiBaru.setOnClickListener { finish() }
-        btnKeDashboard.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+        btnTransaksiBaru.setOnClickListener {
+            val intent = Intent(this, TransaksiActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
             startActivity(intent)
+            finish()
         }
         btnPrint.setOnClickListener { printStruk() }
     }
