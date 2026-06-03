@@ -47,8 +47,7 @@ media pembelajaran maupun sistem kasir sederhana untuk usaha kecil.
 <img src="app/screenshot/transaksibaru.jpeg" width="300"> <img src="app/screenshot/struktransaksi.jpeg" width="300">
 
 ### Activity Pelanggan
-<img src="app/screenshot/pelanggan.jpeg" width="300">
-<img src="app/screenshot/tambahpelanggan.jpeg" width="300">
+<img src="app/screenshot/pelanggan.jpeg" width="300"> <img src="app/screenshot/tambahpelanggan.jpeg" width="300">
 
 ### Activity Laporan
 <img src="app/screenshot/laporan.jpeg" width="300">
@@ -57,20 +56,16 @@ media pembelajaran maupun sistem kasir sederhana untuk usaha kecil.
 <img src="app/screenshot/akun.jpeg" width="300">
 
 ### Activity Produk
-<img src="app/screenshot/produk.jpeg" width="300">
-<img src="app/screenshot/tambahproduk.jpeg" width="300">
+<img src="app/screenshot/produk.jpeg" width="300"> <img src="app/screenshot/tambahproduk.jpeg" width="300">
 
 ### Activity Kategori
-<img src="app/screenshot/kategori.jpeg" width="300">
-<img src="app/screenshot/tambahkategori.jpeg" width="300">
+<img src="app/screenshot/kategori.jpeg" width="300"> <img src="app/screenshot/tambahkategori.jpeg" width="300">
 
 ### Activity Pegawai
-<img src="app/screenshot/pegawai.jpeg" width="300">
-<img src="app/screenshot/tambahpegawai.jpeg" width="300">
+<img src="app/screenshot/pegawai.jpeg" width="300"> <img src="app/screenshot/tambahpegawai.jpeg" width="300">
 
 ### Activity Cabang
-<img src="app/screenshot/cabang.jpeg" width="300">
-<img src="app/screenshot/tambahcabang.jpeg" width="300">
+<img src="app/screenshot/cabang.jpeg" width="300"> <img src="app/screenshot/tambahcabang.jpeg" width="300">
 
 ### Printer
 <img src="app/screenshot/printer.jpeg" width="300">
